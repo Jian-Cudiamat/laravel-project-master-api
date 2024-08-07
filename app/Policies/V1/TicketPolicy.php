@@ -32,7 +32,7 @@ class TicketPolicy
 
     public function store(User $user) {
         return $user->tokenCan(Abilities::CreateTicket) ||
-            $user->tokenCan(Abilities::CreateOwnTicket);
+               $user->tokenCan(Abilities::CreateOwnTicket);
     }
 
     public function update(User $user, Ticket $ticket) {
@@ -44,4 +44,4 @@ class TicketPolicy
 
         return false;
     }
-}
+ }

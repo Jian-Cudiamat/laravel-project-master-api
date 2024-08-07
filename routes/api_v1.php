@@ -4,7 +4,7 @@ use App\Http\Controllers\Api\V1\TicketController;
 use App\Http\Controllers\Api\V1\AuthorsController;
 use App\Http\Controllers\Api\V1\AuthorTicketsController;
 use App\Http\Controllers\Api\V1\UserController;
-use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\AuthController;
 use App\Models\Ticket;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -43,3 +43,5 @@ Route::middleware('auth:sanctum')->group(function() {
         return $request->user();
     });
 });
+
+

@@ -39,7 +39,7 @@ class Handler extends ExceptionHandler
                 ];
             }
 
-        return $errors;
+            return $errors;
     }
 
     private function handleModelNotFound(ModelNotFoundException $exception) {

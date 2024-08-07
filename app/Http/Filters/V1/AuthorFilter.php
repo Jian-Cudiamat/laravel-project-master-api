@@ -48,5 +48,5 @@ class AuthorFilter extends QueryFilter {
         return $this->builder->whereDate('updated_at', $value);
     }
 
-
+    
 }
