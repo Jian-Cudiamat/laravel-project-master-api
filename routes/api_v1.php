@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\V1\TicketController;
-use App\Http\Controllers\Api\V1\UsersController;
+use App\Http\Controllers\Api\V1\AuthorsController;
 
 use App\Http\Controllers\AuthController;
 use App\Models\Ticket;
@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 // users
 
 Route::middleware('auth:sanctum')->apiResource('tickets', TicketController::class);
-Route::middleware('auth:sanctum')->apiResource('users', UsersController::class);
+Route::middleware('auth:sanctum')->apiResource('users', AuthorsController::class);
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
